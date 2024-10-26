@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero {
+    border: solid;
+    background-color: url(https://www.ladenac.com/velas-decorativas/static/0_821630584604_flag-ship-store.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+p {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px #000;
+}
+
