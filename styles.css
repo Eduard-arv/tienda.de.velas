@@ -1,3 +1,4 @@
+/* remover los estilos que vienen por defecto*/
 * {
     margin: 0;
     padding: 0;
@@ -5,34 +6,42 @@
 }
 
 body {
-    font-family: helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #eadbbe;
 }
 
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: #eadbbe;
 }
 
-img {
-    border-radius: 50%;
-}
-
-ul {
+header nav {
     display: flex;
-    list-style: none;
-    gap: 15px;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
 }
 
-a {
+header nav a {
     text-decoration: none;
-    color: #000;
+    color: #691a63;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.logo {
+    border-radius: 50%;
+    border: solid 1px;
+    box-shadow: white 1px 1px;
+    width: 100px;
 }
 
 .hero {
-    border: solid;
-    background-color: url(https://www.ladenac.com/velas-decorativas/static/0_821630584604_flag-ship-store.jpg);
+    background: url("https://aromasfenpal.com/wp-content/uploads/2023/03/mejores-esencias-aromaticas-para-velas-scaled.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -40,16 +49,107 @@ a {
     display: flex;
     align-items: center;
     padding: 20px;
-    color: #fff;
+    
+}
+.hero a {
+    text-decoration: none;
+
 }
 
 h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 3px #000;
+    text-align: center;
+    color: #691a63;
+}
+
+h2{
     font-size: 40px;
-    text-shadow: 1px 1px 2px #000;
+    text-shadow: 2px 2px 3px #000;
+    text-align: center;
+    color: #691a63;
 }
 
+h3 {
+    font-size: 30px;
+    text-shadow: 2px 2px 3px #000;
+    text-align: center;
+    color: #691a63;
+    margin-top: 20px;
+}
 p {
-    font-size: 18px;
-    text-shadow: 1px 1px 2px #000;
+    font-size: 22px;
+    text-shadow: 1px 1px 2px #c9bcbc;
+    text-align: center;
 }
 
+.button {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border: solid 1px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: rgb(105, 4, 75);
+}
+
+.btn-primario {
+    background-color: #c9c5c4;
+}
+
+.promociones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: rgb(239, 134, 243);
+    border: 1px solid #9a38db;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Ancho fijo para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    gap: 20px;
+    padding: auto;
+}
+
+.add-to-cart {
+    background-color: #a8c0bd;
+    color: #0b42f9;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
