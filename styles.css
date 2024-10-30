@@ -61,95 +61,127 @@ h1 {
     text-shadow: 2px 2px 3px #000;
     text-align: center;
     color: #691a63;
+    align-items: center;
 }
 
-h2{
-    font-size: 40px;
-    text-shadow: 2px 2px 3px #000;
-    text-align: center;
-    color: #691a63;
-}
-
-h3 {
-    font-size: 30px;
-    text-shadow: 2px 2px 3px #000;
-    text-align: center;
-    color: #691a63;
-    margin-top: 20px;
-}
 p {
     font-size: 22px;
     text-shadow: 1px 1px 2px #c9bcbc;
     text-align: center;
-}
-
-.button {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-}
-.btn {
-    padding: 10px 20px;
-    text-decoration: none;
-    border: solid 1px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    color: rgb(105, 4, 75);
-}
-
-.btn-primario {
-    background-color: #c9c5c4;
+    align-content: center;
 }
 
 .promociones {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
     gap: 20px;
-    padding: 20px 0;
+    padding: 40px;
+    
+}
+
+.promociones h2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px #000;
+    color: #691a63;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    gap: 10px;
+    padding: 10px;
+
 }
 
 .card {
-    background-color: rgb(239, 134, 243);
-    border: 1px solid #9a38db;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #c9bcbc;
+    border: 1px solid #67047a;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px;
     overflow: hidden;
-    width: 300px; /* Ancho fijo para todas las tarjetas */
+    width: 300px;
+    height: 350px;
+    margin: 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between
+    flex-direction: column; 
+    justify-content: space-between;
     text-align: center;
     transition: transform 0.3s ease;
-    padding: 20px;
-    gap: 20px;
-    padding: auto;
 }
 
-.add-to-cart {
-    background-color: #a8c0bd;
-    color: #0b42f9;
-    border: 2px solid #333;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.card:hover {
+    transform: translate(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-tittle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    color: #691a63;
+    justify-items: center;
+}
+
+.card-button {
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    gap: 10px;    
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #67047a;
+    background-color: #fa3aea;
+    text-align: center;
+
 }
 
-.card span {
-    font-size: 1.1rem;
+.btn {
+    margin: auto;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
     font-weight: bold;
-    color: var(--accent-color);
-    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: rgb(10, 8, 8);
+    gap: 10px;
 }
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+.btn-primario {
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 40px;
+    
+}
+
+.btn-primario:hover {
+    background-color: #0056b3; /* Color más oscuro en hover */
+}
+
