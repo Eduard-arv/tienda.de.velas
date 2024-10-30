@@ -36,7 +36,8 @@ header nav a {
 .logo {
     border-radius: 50%;
     border: solid 1px;
-    box-shadow: white 1px 1px;
+    border: color rgb(151, 13, 151);
+    box-shadow: rgb(240, 82, 240) 1px 1px;
     width: 100px;
 }
 
@@ -177,7 +178,7 @@ p {
     padding: 10px 10px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-top: 40px;
+    margin-top: 40px 10px 10px;
     
 }
 
