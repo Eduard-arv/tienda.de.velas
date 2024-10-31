@@ -186,3 +186,15 @@ p {
     background-color: #0056b3; /* Color más oscuro en hover */
 }
 
+section {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+section > a {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
