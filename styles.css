@@ -1,47 +1,46 @@
-/* remover los estilos que vienen por defecto*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #eadbbe;
-}
-
-header{
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #eadbbe;
-}
-
-header nav {
+  }
+  
+  header nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
-}
-
-header nav a {
+  }
+  
+  header nav a {
     text-decoration: none;
     color: #691a63;
     font-weight: bold;
     font-size: 20px;
     transition: color 0.3s ease;
-}
-
-.logo {
+  }
+  
+  .logo {
     border-radius: 50%;
     border: solid 1px;
     border: color rgb(151, 13, 151);
     box-shadow: rgb(240, 82, 240) 1px 1px;
     width: 100px;
-}
-
-.hero {
+  }
+  
+  .hero {
     background: url("https://aromasfenpal.com/wp-content/uploads/2023/03/mejores-esencias-aromaticas-para-velas-scaled.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,38 +49,35 @@ header nav a {
     display: flex;
     align-items: center;
     padding: 20px;
-    
-}
-.hero a {
+  }
+  .hero a {
     text-decoration: none;
-
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 50px;
     text-shadow: 2px 2px 3px #000;
     text-align: center;
     color: #691a63;
     align-items: center;
-}
-
-p {
+  }
+  
+  p {
     font-size: 22px;
     text-shadow: 1px 1px 2px #c9bcbc;
     text-align: center;
     align-content: center;
-}
-
-.promociones {
+  }
+  
+  .promociones {
     display: flex;
     justify-content: space-between;
     text-align: center;
     gap: 20px;
     padding: 40px;
-    
-}
-
-.promociones h2 {
+  }
+  
+  .promociones h2 {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -90,18 +86,16 @@ p {
     color: #691a63;
     gap: 20px;
     padding: 40px;
-}
-
-.card-container {
+  }
+  
+  .card-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
     gap: 10px;
     padding: 10px;
-
-}
-
-.card {
+  }
+  
+  .card {
     background-color: #c9bcbc;
     border: 1px solid #67047a;
     border-radius: 10px;
@@ -111,48 +105,47 @@ p {
     height: 350px;
     margin: 30px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-between;
     text-align: center;
     transition: transform 0.3s ease;
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     transform: translate(-5px);
-}
-
-.card img {
+  }
+  
+  .card img {
     width: 100%;
     height: 200%;
     object-fit: cover;
-}
-
-.card-content {
+  }
+  
+  .card-content {
     padding: 30px;
-}
-
-.card-tittle {
+  }
+  
+  .card-tittle {
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px #000;
     text-align: center;
     color: #691a63;
     justify-items: center;
-}
-
-.card-button {
+  }
+  
+  .card-button {
     display: flex;
     justify-content: space-around;
-    gap: 10px;    
+    gap: 10px;
     margin-top: 10px;
     border-radius: 10px;
     border: 1px solid #67047a;
     background-color: #fa3aea;
     text-align: center;
-
-}
-
-.btn {
+  }
+  
+  .btn {
     margin: auto;
     padding: 10px 10px;
     text-decoration: none;
@@ -162,13 +155,13 @@ p {
     transition: background-color 0.3s ease, color 0.3s ease;
     color: rgb(10, 8, 8);
     gap: 10px;
-}
-
-.btn:hover {
-    background-color: #0056b3; 
-}
-
-.btn-primario {
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-primario {
     align-items: center;
     justify-items: center;
     font-size: 1rem;
@@ -179,22 +172,20 @@ p {
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 40px 10px 10px;
-    
-}
-
-.btn-primario:hover {
+  }
+  
+  .btn-primario:hover {
     background-color: #0056b3; /* Color más oscuro en hover */
-}
-
-section {
-display: flex;
-justify-content: center;
-margin-top: 20px;
-}
-
-section > a {
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  section > a {
     border-radius: 5px;
     display: flex;
     justify-content: center;
-}
-
+  }
