@@ -79,6 +79,7 @@
   
   .promociones h2 {
     display: flex;
+    text-align: center;
     justify-content: space-between;
     text-align: center;
     font-size: 40px;
@@ -147,7 +148,7 @@
   
   .btn {
     margin: auto;
-    padding: 10px 10px;
+    padding: 5px 5px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -156,9 +157,25 @@
     color: rgb(10, 8, 8);
     gap: 10px;
   }
-  
+
   .btn:hover {
     background-color: #0056b3;
+  }
+
+  .button {
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: rgb(10, 8, 8);
+    gap: 20px;
   }
   
   .btn-primario {
@@ -168,6 +185,7 @@
     font-weight: bold;
     color: #000;
     border-radius: 5px;
+    border-color: #67047a;
     padding: 10px 10px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -188,4 +206,34 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
+  }
+
+  .btn-secundario {
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+    border-color: #67047a;
+    background-color: #fa3aea;
+    padding: 5px 5px;
+    margin: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 40px 10px 10px;
+  }
+
+  .btn-secundario a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .btn-secundario:hover {
+    background-color: #0056b3; /* Color más oscuro en hover */  
+  }
+
+  section > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #290526;
   }
