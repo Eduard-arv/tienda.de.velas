@@ -1,44 +1,69 @@
-function chageBackgroundColor () { 
-const backgroundColor = promt("Ingrese un color de fondo para la web")
-document.body.style.backgroundColor = backgroundColor
+function changeBackgroundColor() {
+    const backgroundColor = prompt("Ingrese un color de fondo para la web");
+    document.body.style.backgroundColor = backgroundColor;
 }
 
-//chageBackgroundColor() 
+changeBackgroundColor();
 
-function registerBrother () {
-    // PASO 1: debemos saber la cantidad de hermanos
-    const brotherQuantity = Number(prompt("Ingrese la cantidad de hermanos")) 
-    // Paso 2: creamos un arreglo vacio donde vamos agregar los nombres de los hermanos
-    const brothers = []
-    //Paso 3: crear una variable counter para ir contando la cantidad de veces que ejerce el arreglo
+function registerBrother() {
+    const brotherQuantity = Number(prompt("Ingrese la cantidad de hermanos"));
+    const brother = [];
+    let counter = 0;
 
-
-let counter = 0 
-
-// Paso 4: creamos un while usando la condicon de counter < 
-while (counter < brotherQuantity) {
-    const brotherName = prompt("Ingresa el nombre de tu hermano " + counter)
-    brotherName.push(brotherName)
-    counter++
+    while (counter < brotherQuantity) {
+        const brotherName = prompt("Ingresa el nombre de tu hermano " + counter);
+        brother.push(brotherName);
+        counter++;
     }
-
+    console.log(brother);
 }
 
-function generateBlocks () {
-    const blocksNumber = Number( 
-    prompt("Ingrese la cantidad de bloques que desea dibujar")
-    )
+function generarColorHex() {
+    const caracteres = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += caracteres[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
-    let counter = 0
+function generateBlocks() {
+    const blocksNumber = Number(prompt("Ingrese la cantidad de bloques que desea dibujar"));
+    let counter = 0;
 
     while(counter < blocksNumber) {
-        // Para poder crear un HTML desde JS podemos usar la funcion "createElement"
-        const newDiv = document.createElement("div") 
-        // para que este div aparezca, debo agregarlo al body
-        newDiv.style.width = "100px"
-        newDiv.style.height = "100px"
-        newDiv.style.backgroundColor =  blue 
-        document.body.appendChild(newDiv)
-        counter++
+        const newDiv = document.createElement("div");
+        document.querySelector("main").appendChild(newDiv);
+        counter++;
+        newDiv.style.width = "100px";
+        newDiv.style.height = "100px";
+        newDiv.style.backgroundColor = generarColorHex();
     }
+}
+
+function playGame() {
+    const choices = ['piedra', 'papel', 'tijera'];
+    const userChoice = prompt("Escribe tu elección: piedra, papel o tijera").toLowerCase();
+    
+    if (!choices.includes(userChoice)) {
+        document.getElementById("result").innerText = "Opción inválida. Por favor, elige piedra, papel o tijera.";
+        return;
+    }
+    
+    const computerChoice = choices[Math.floor(Math.random() * 3)];
+    
+    let result;
+    if (userChoice === computerChoice) {
+        result = "¡Empate! Ambos eligieron " + userChoice;
+    } else if (
+        (userChoice === 'piedra' && computerChoice === 'tijera') ||
+        (userChoice === 'papel' && computerChoice === 'piedra') ||
+        (userChoice === 'tijera' && computerChoice === 'papel')
+    ) {
+        result = "¡Ganaste! " + userChoice + " vence a " + computerChoice;
+    } else {
+        result = "¡Perdiste! " + computerChoice + " vence a " + userChoice;
+    }
+    
+    document.getElementById("result").innerText = result;
 }

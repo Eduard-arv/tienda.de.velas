@@ -4,31 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactivo</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <img
-          class="logo"
-          src="https://img.freepik.com/fotos-premium/logotipo-simple-diseno-plano-tienda-velas-ai-generativa_934475-4769.jpg"
-          alt="logo"
-        />
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="productos.html">Productos</a>
-          <a href="promociones.html">Promociones</a>
-          <a href="contactanos.html">Contáctanos</a>
-        </nav>
-    </header>
-    
     <main>
         <h1>Web interactiva</h1>
-        <div class="button">
-            <button class="btn-secundario" onclick="registerBrother()">Hermano 1</button>
-            <button class="btn-secundario" clonclick="registerBrother()">Hermano 2</button>
-            <button class="btn-secundario" onclick="registerBrother()">Hermano 3</button>
-        </div>
+        <section class="button">
+            <button class="btn-secundario"onclick="registerBrother()">Hermano 1</button>
+            <button class="btn-secundario"onclick="generateBlocks()">Bloques</button>
+            <button class="btn-secundario"onclick="playGame()">Yanquempo</button>
+        </section>
     </main>
-    
+    <script src="./app.js"></script>
 </body>
 </html>
